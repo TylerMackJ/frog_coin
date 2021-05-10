@@ -34,7 +34,7 @@ impl Blockchain {
 
             if temp_block.id != self.chain.len() as u64 {
                 temp_block.id = self.chain.len() as u64;
-                temp_block.prev_hash = Some(self.chain.last().expect("Error chaing prev_hash").get_hash());
+                temp_block.prev_hash = Some(self.chain.last().expect("Error chaining prev_hash").get_hash());
                 continue 'retry
             }
             if (temp_block.get_hash() as u64 & 0x0000_0000_00FF_FFFF_u64) == 0x0u64 {

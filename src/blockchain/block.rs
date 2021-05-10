@@ -32,7 +32,7 @@ impl Block {
             None => prev_hash = u64::MAX,
         }
 
-        println!("----Block {}----\nprev_hash: {:#x}\nhash: {:#x}\nnonce: {}", self.id, prev_hash, self.get_hash(), self.nonce);
+        println!("----Block {}----\nprev_hash: 0x{:016X}\nhash: 0x{:016X}\nnonce: {}", self.id, prev_hash, self.get_hash(), self.nonce);
     }
 
     pub fn get_hash(&self) -> u64 {

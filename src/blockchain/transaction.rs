@@ -10,9 +10,9 @@ pub struct Transaction {
 impl Transaction {
     pub fn new(sender: u64, receiver: u64, amount: u64) -> Transaction {
         Transaction {
-            sender: sender,
-            receiver: receiver,
-            amount: amount,
+            sender,
+            receiver,
+            amount,
         }
     }
 }
